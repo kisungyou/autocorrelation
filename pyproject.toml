@@ -31,6 +31,8 @@ notebooks = [
   "nbformat>=5.9",
 ]
 
+[project.urls]
+Repository = "https://github.com/kisungyou/autocorrelation"
+
 [tool.setuptools]
 py-modules = ["autocorr"]
-

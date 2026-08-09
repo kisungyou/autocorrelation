@@ -1,9 +1,10 @@
 """Public routines for Riemannian Moran and Geary diagnostics.
 
 This is the small computational surface used by the public notebooks for
-*One Moran, Three Geary Measures*.  It implements the manuscript definitions,
-the sphere, affine-invariant SPD, and torus geometries used in the examples,
-portable data loaders, shared plotting settings, and deterministic self-checks.
+*Spatial Autocorrelation for Manifold-Valued Geographic Data*. It implements
+the manuscript definitions, the sphere, affine-invariant SPD, and torus
+geometries used in the examples, portable data loaders, shared plotting
+settings, and deterministic self-checks.
 
 The implementation never silently recenters logarithmic residuals.  A valid
 Fréchet center must satisfy its first-order condition up to numerical

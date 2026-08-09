@@ -1,6 +1,6 @@
 {
   "paper": {
-    "title": "One Moran, Three Geary Measures: Spatial Autocorrelation for Manifold-Valued Geographic Data",
+    "title": "Spatial Autocorrelation for Manifold-Valued Geographic Data",
     "author": "Kisung You",
     "seed": 20260719,
     "fdr_level": 0.05,

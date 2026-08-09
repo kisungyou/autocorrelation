@@ -1,10 +1,14 @@
 # Riemannian spatial autocorrelation
 
-This repo is a notebook-first public companion to *One Moran, Three Geary
-Measures: Spatial Autocorrelation for Manifold-Valued Geographic Data*. It
+This repo is a notebook-first public companion to *Spatial Autocorrelation for
+Manifold-Valued Geographic Data*. It
 contains the reusable Moran--Geary routines, executable versions of the
 controlled spherical study and three geographic applications, compact public
 inputs, and archived manuscript-scale summaries.
+
+Replication code, executable notebooks, and public inputs are available in the
+canonical repository at
+[github.com/kisungyou/autocorrelation](https://github.com/kisungyou/autocorrelation).
 
 The release is intentionally smaller than the research workspace. Manuscript
 sources, journal files, preparation scripts, duplicate figure formats, caches,

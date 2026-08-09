@@ -7,7 +7,7 @@
 - [x] Execute all notebooks and retain their embedded tables and figures.
 - [x] Run `python tests/test_autocorr.py` and `python autocorr.py`.
 - [x] Audit the public tree for absolute user paths, credentials, caches, build products, and private files.
-- [ ] Create the remote GitHub repository from this folder.
-- [ ] Add the article DOI and repository URL after they exist.
+- [x] Publish the repository at `https://github.com/kisungyou/autocorrelation`.
+- [x] Record the repository URL in the manuscript and release metadata.
+- [ ] Add the article DOI after it is assigned.
 - [ ] Tag the first archived release if versioned preservation is desired.
-
