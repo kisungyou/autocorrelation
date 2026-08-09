@@ -1,0 +1,48 @@
+{
+  "artifact": {
+    "file": "california_commuting_input.npz",
+    "sha256": "eafa2920b2016d4756332f61c830c9e11df1958dab59a07040854092812a016d",
+    "bytes": 6537,
+    "pickle_free": true,
+    "arrays": {
+      "tensors": {"dtype": "float64", "shape": [58, 2, 2]},
+      "geoid": {"dtype": "<U5", "shape": [58]},
+      "county": {"dtype": "<U64", "shape": [58]},
+      "lon": {"dtype": "float64", "shape": [58]},
+      "lat": {"dtype": "float64", "shape": [58]},
+      "x": {"dtype": "float64", "shape": [58]},
+      "y": {"dtype": "float64", "shape": [58]},
+      "within_ca_workers": {"dtype": "float64", "shape": [58]},
+      "destinations": {"dtype": "int64", "shape": [58]},
+      "epsilon_m2": {"dtype": "float64", "shape": []}
+    }
+  },
+  "sources": [
+    {
+      "title": "Residence County to Workplace County Commuting Flows",
+      "agency": "U.S. Census Bureau",
+      "release": "2016-2020 ACS five-year commuting flows, Table 1",
+      "url": "https://www2.census.gov/programs-surveys/demo/tables/metro-micro/2020/commuting-flows-2020/table1.xlsx",
+      "accessed": "2026-07-19",
+      "sha256": "1dbf52bede8af185ec487e193903e19332c9633cbb3da689afcc382fef7317ee",
+      "rights": "Underlying U.S. Census Bureau data are public-use federal statistical data; retain agency and table attribution.",
+      "citation_policy": "https://www.census.gov/about/policies/citation.html"
+    },
+    {
+      "title": "2020 California county Gazetteer",
+      "agency": "U.S. Census Bureau",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_gaz_counties_06.txt",
+      "accessed": "2026-07-19",
+      "sha256": "0184c4390c106205af45d3ee163cbce74200b0083ace3ac442fa09bf01fd3b80",
+      "rights": "Underlying U.S. Census Bureau data are public-use federal geographic data; retain agency and file attribution.",
+      "citation_policy": "https://www.census.gov/about/policies/citation.html"
+    }
+  ],
+  "processing": [
+    "Retain California residence counties and California workplace destinations.",
+    "Normalize retained worker counts within each residence county.",
+    "Project Gazetteer representative points from EPSG:4326 to EPSG:3310.",
+    "Form the weighted second moment of workplace-minus-residence displacement vectors.",
+    "Add epsilon times the identity, where epsilon is 1e-4 times the median raw tensor trace."
+  ]
+}

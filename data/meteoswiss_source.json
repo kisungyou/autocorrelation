@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "file": "meteoswiss.csv",
+    "sha256": "3c77697278844f7e286a57c6e2d52f5d39806cfb475f993d0b29ba4033dfd310",
+    "bytes": 443464,
+    "coverage": "Historical Swiss phenological observations, 1951-2023"
+  },
+  "dataset": {
+    "identifier": "27a3ac47-8dcc-4bd4-95cf-8eda423d6a04@bundesamt-fur-meteorologie-und-klimatologie-meteoschweiz",
+    "title": "Phenological observations - Data",
+    "publisher": "Federal Office of Meteorology and Climatology MeteoSwiss",
+    "issued": "2025-05-20",
+    "official_url": "https://opendata.swiss/en/dataset/phanologische-beobachtungen1",
+    "documentation": "https://opendatadocs.meteoswiss.ch/a-data-groundbased/a9-phenological-observations",
+    "rights": "https://opendata.swiss/en/terms-of-use#terms_by",
+    "required_attribution": "Source: MeteoSwiss."
+  },
+  "acquisition": {
+    "url": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/blob/2a58d82880dbd6fbd91269af11c6aa0ce0da2522/data/meteoswiss.csv",
+    "accessed": "2026-07-19",
+    "commit": "2a58d82880dbd6fbd91269af11c6aa0ce0da2522",
+    "hash_matches_acquisition_file": true
+  },
+  "notebook_processing": {
+    "era_split": 1990,
+    "minimum_observations_per_era": 8,
+    "phase_conversion": "2*pi*bloom_doy/365.25",
+    "center": "Intrinsic circular Frechet mean under squared wrapped distance"
+  }
+}

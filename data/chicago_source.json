@@ -1,0 +1,27 @@
+{
+  "composition": {
+    "artifact": "chicago_community_area_composition.csv",
+    "sha256": "d01a19f09fa3c068a9f061270768023b5de6cd0eea71ec1bb17e51f7df6a0434",
+    "bytes": 3544,
+    "source_agency": "Chicago Metropolitan Agency for Planning (CMAP)",
+    "source_release": "Community Data Snapshots, June 2026",
+    "source_item": "https://www.arcgis.com/home/item.html?id=97e9fe4ef14c42da9d26e6fc31bee5e0",
+    "source_layer": "https://services5.arcgis.com/LcMXE3TFhi1BSaCY/arcgis/rest/services/Community_Data_Snapshots_2026/FeatureServer/11",
+    "accessed": "2026-07-19",
+    "license_info": "Not restricted. Users are expected to cite the Chicago Metropolitan Agency for Planning (CMAP) as the source of these data.",
+    "fields": ["WHITE", "HISP", "BLACK", "ASIAN", "OTHER"],
+    "processing": "Each source field was rounded independently to the nearest integer. category_total is the sum of the five rounded components."
+  },
+  "geometry": {
+    "distribution": "PySAL/libpysal examples/chicago/Chicago77",
+    "immutable_source": "https://github.com/pysal/libpysal/tree/b808e7c0df8ddf6b62fb4f92d4ec0e39f9ec32e5/libpysal/examples/chicago",
+    "accessed": "2026-07-19",
+    "files": {
+      "Chicago77.shp": "7c62188f419911487ac1033a464f55e4b040f1d1c9afcb769e1c352088b98df7",
+      "Chicago77.shx": "a1eec4184edfadfbc3bd540b6effc2ffac1cd4fe2380f7e712b530b011f4ad79",
+      "Chicago77.dbf": "f08af37f52cc23a501a29ee1673b07f61a60e1e93cd4b54f206d5b7671cafc55"
+    },
+    "notices": ["Chicago77_LICENSE.txt", "Chicago77_README.md"]
+  }
+}
+

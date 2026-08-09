@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riemannian-spatial-autocorrelation"
+version = "0.1.0"
+description = "Notebook-first examples and core routines for Riemannian Moran and Geary measures"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+  {name = "Kisung You"},
+]
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.12",
+  "matplotlib>=3.8",
+  "geopandas>=0.14",
+  "libpysal>=4.10",
+  "pyproj>=3.6",
+  "shapely>=2.0",
+]
+
+[project.optional-dependencies]
+notebooks = [
+  "jupyterlab>=4.0",
+  "ipykernel>=6.25",
+  "nbclient>=0.8",
+  "nbformat>=5.9",
+]
+
+[tool.setuptools]
+py-modules = ["autocorr"]
+
