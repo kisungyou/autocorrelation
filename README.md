@@ -6,10 +6,6 @@ contains the reusable Moran--Geary routines, executable versions of the
 controlled spherical study and three geographic applications, compact public
 inputs, and archived manuscript-scale summaries.
 
-Replication code, executable notebooks, and public inputs are available in the
-canonical repository at
-[github.com/kisungyou/autocorrelation](https://github.com/kisungyou/autocorrelation).
-
 The release is intentionally smaller than the research workspace. Manuscript
 sources, journal files, preparation scripts, duplicate figure formats, caches,
 and internal logs are not included. Each checked-in notebook is executed, so
