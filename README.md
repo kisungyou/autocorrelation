@@ -92,15 +92,3 @@ Fréchet mean. The affine-invariant routine is written for small SPD matrices,
 and the torus routine uses coordinatewise intrinsic circular means. These are
 transparent study implementations, not a general manifold-learning library.
 
-## Verification
-
-From this folder, run:
-
-```sh
-python tests/test_autocorr.py
-python autocorr.py
-```
-
-Licensing and sole-author citation metadata are included in `LICENSE` and
-`CITATION.cff`. The remaining optional publication steps are recorded in
-`RELEASE_CHECKLIST.md`.
